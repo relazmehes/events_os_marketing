@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Planning OS — Marketing Website
 
-## Getting Started
+Public marketing website for [Event Planning OS](https://eventplanningos.com) — the all-in-one platform for independent event planners.
 
-First, run the development server:
+Built with **Next.js 15 (App Router)**, **Tailwind CSS v4**, and **shadcn/ui**. Deployed on **Vercel**.
+
+---
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Home / Landing — hero, features, how it works, pricing, CTA |
+| `/features` | Full module breakdown |
+| `/pricing` | Pricing cards, feature comparison table, FAQ |
+| `/about` | Mission and company story |
+| `/blog` | Blog (stub — content coming soon) |
+| `/contact` | Contact form (Resend integration) |
+
+---
+
+## Local setup
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Steps
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/relazmehes/events_os_marketing.git
+cd events_os_marketing
+
+# 2. Install dependencies
+npm install
+
+# 3. Copy the environment file and fill in values
+cp .env.example .env.local
+
+# 4. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment variables
 
-## Learn More
+See `.env.example` for all required and optional variables.
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Required | Description |
+|---|---|---|
+| `NEXT_PUBLIC_APP_URL` | Yes | Railway production URL of the main app |
+| `NEXT_PUBLIC_SITE_URL` | Yes | Public URL of this marketing site |
+| `RESEND_API_KEY` | No | Resend API key for contact form emails |
+| `CONTACT_EMAIL` | No | Email that receives contact form submissions |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment (Vercel)
 
-## Deploy on Vercel
+1. Push this repo to GitHub.
+2. Import the repo in [vercel.com](https://vercel.com).
+3. Set the environment variables in Vercel Project Settings → Environment Variables.
+4. Vercel auto-deploys on every push to `main`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech stack
+
+- **Framework:** Next.js 15 (App Router, SSG/SSR)
+- **Styling:** Tailwind CSS v4
+- **Components:** shadcn/ui (Radix primitives)
+- **Icons:** Lucide React
+- **Fonts:** Inter (body) + Sora (headings) via `next/font/google`
+- **Contact form:** Resend API (optional)
+- **Deployment:** Vercel
+
+---
+
+## Git commit style
+
+```
+feat:   new feature
+fix:    bug fix
+style:  UI/copy changes
+chore:  deps, config, tooling
+```
+
+---
+
+## Related repos
+
+- **App (Railway):** [events_os](https://github.com/relazmehes/events_os)
