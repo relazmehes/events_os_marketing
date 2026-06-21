@@ -2,7 +2,7 @@
 
 Public marketing website for [Event Planning OS](https://eventplanningos.com) — the all-in-one platform for independent event planners.
 
-Built with **Next.js 15 (App Router)**, **Tailwind CSS v4**, and **shadcn/ui**. Deployed on **Vercel**.
+Built with **Next.js 15 (App Router)**, **Tailwind CSS v4**, and **shadcn/ui**. Deployed on **Railway**.
 
 ---
 
@@ -60,12 +60,14 @@ See `.env.example` for all required and optional variables.
 
 ---
 
-## Deployment (Vercel)
+## Deployment (Railway)
 
-1. Push this repo to GitHub.
-2. Import the repo in [vercel.com](https://vercel.com).
-3. Set the environment variables in Vercel Project Settings → Environment Variables.
-4. Vercel auto-deploys on every push to `main`.
+1. Push this repo to GitHub (already done).
+2. In [railway.app](https://railway.app), create a new project → **Deploy from GitHub repo** → select `events_os_marketing`.
+3. Railway will auto-detect Next.js. Set the **Start Command** to `npm run start` and **Build Command** to `npm run build`.
+4. Set environment variables in Railway Project Settings → Variables (see table above).
+5. Optionally add a custom domain in Railway → Settings → Networking → Custom Domain.
+6. Railway auto-deploys on every push to `main`.
 
 ---
 
@@ -77,7 +79,7 @@ See `.env.example` for all required and optional variables.
 - **Icons:** Lucide React
 - **Fonts:** Inter (body) + Sora (headings) via `next/font/google`
 - **Contact form:** Resend API (optional)
-- **Deployment:** Vercel
+- **Deployment:** Railway
 
 ---
 
