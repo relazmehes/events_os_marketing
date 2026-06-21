@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { CalendarHeart, Share2, Globe, Mail } from "lucide-react";
 
-interface FooterProps {
-  appUrl: string;
-}
-
-export function Footer({ appUrl }: FooterProps) {
+export function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
@@ -56,8 +52,8 @@ export function Footer({ appUrl }: FooterProps) {
             <ul className="space-y-3 text-sm">
               <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link href={`${appUrl}/signup`} className="hover:text-white transition-colors">Start free trial</Link></li>
-              <li><Link href={`${appUrl}/login`} className="hover:text-white transition-colors">Sign in</Link></li>
+              <li><Link href={"/signup"} className="hover:text-white transition-colors">Start free trial</Link></li>
+              <li><Link href={"/login"} className="hover:text-white transition-colors">Sign in</Link></li>
             </ul>
           </div>
 

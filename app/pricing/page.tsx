@@ -226,7 +226,7 @@ export default function PricingPage() {
                   </ul>
                   <Button
                     asChild
-                    href={tier.name === "Enterprise" ? "/contact" : `${APP_URL}/signup`}
+                    href={tier.name === "Enterprise" ? "/contact" : "/signup"}
                     className={`w-full font-semibold ${
                       tier.highlighted
                         ? "bg-white text-indigo-600 hover:bg-indigo-50"
@@ -342,7 +342,7 @@ export default function PricingPage() {
           </p>
           <Button
             asChild
-            href={`${APP_URL}/signup`}
+            href={"/signup"}
             size="lg"
             className="mt-8 bg-white text-indigo-600 hover:bg-indigo-50 px-8 text-base font-semibold shadow-lg"
           >

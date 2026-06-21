@@ -85,7 +85,7 @@ const PRICING_TIERS = [
       "Guest list management",
     ],
     cta: "Start free trial",
-    ctaHref: `${APP_URL}/signup`,
+    ctaHref: "/signup",
     highlighted: false,
   },
   {
@@ -103,7 +103,7 @@ const PRICING_TIERS = [
       "Priority email support",
     ],
     cta: "Start free trial",
-    ctaHref: `${APP_URL}/signup`,
+    ctaHref: "/signup",
     highlighted: true,
   },
   {
@@ -157,7 +157,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
-              href={`${APP_URL}/signup`}
+              href={"/signup"}
               size="lg"
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 text-base font-semibold shadow-lg shadow-indigo-200"
             >
@@ -397,7 +397,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
-              href={`${APP_URL}/signup`}
+              href={"/signup"}
               size="lg"
               className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 text-base font-semibold shadow-lg"
             >

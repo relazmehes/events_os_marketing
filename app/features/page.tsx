@@ -270,7 +270,7 @@ export default function FeaturesPage() {
           </p>
           <Button
             asChild
-            href={`${APP_URL}/signup`}
+            href={"/signup"}
             size="lg"
             className="mt-8 bg-white text-indigo-600 hover:bg-indigo-50 px-8 text-base font-semibold shadow-lg"
           >

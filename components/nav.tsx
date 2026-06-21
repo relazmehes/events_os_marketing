@@ -13,11 +13,7 @@ const NAV_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-interface NavProps {
-  appUrl: string;
-}
-
-export function Nav({ appUrl }: NavProps) {
+export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -48,12 +44,12 @@ export function Nav({ appUrl }: NavProps) {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href={`${appUrl}/login`}
+              href={"/login"}
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
             >
               Sign in
             </Link>
-            <Button asChild href={`${appUrl}/signup`} size="sm" className="bg-indigo-600 hover:bg-indigo-700 text-white">
+            <Button asChild href={"/signup"} size="sm" className="bg-indigo-600 hover:bg-indigo-700 text-white">
               Start free trial
             </Button>
           </div>
@@ -83,13 +79,13 @@ export function Nav({ appUrl }: NavProps) {
             ))}
             <div className="pt-2 flex flex-col gap-2">
               <Link
-                href={`${appUrl}/login`}
+                href={"/login"}
                 className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Sign in
               </Link>
-              <Button asChild href={`${appUrl}/signup`} className="bg-indigo-600 hover:bg-indigo-700 text-white w-full">
+              <Button asChild href={"/signup"} className="bg-indigo-600 hover:bg-indigo-700 text-white w-full">
                 Start free trial
               </Button>
             </div>

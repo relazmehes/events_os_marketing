@@ -4,6 +4,7 @@ import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -16,8 +17,6 @@ const sora = Sora({
   display: "swap",
   weight: ["400", "600", "700", "800"],
 });
-
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://eventplanningos.com"),
@@ -64,9 +63,9 @@ export default function RootLayout({
       className={`${inter.variable} ${sora.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
-        <Nav appUrl={APP_URL} />
+        <Nav />
         <main className="flex-1">{children}</main>
-        <Footer appUrl={APP_URL} />
+        <Footer />
       </body>
     </html>
   );

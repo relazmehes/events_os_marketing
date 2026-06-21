@@ -110,7 +110,7 @@ export default function BlogPage() {
               We're putting the finishing touches on our first articles. Sign up to the app to get notified
               when we publish.
             </p>
-            <Button asChild href={`${APP_URL}/signup`} className="bg-indigo-600 hover:bg-indigo-700 text-white">
+            <Button asChild href={"/signup"} className="bg-indigo-600 hover:bg-indigo-700 text-white">
               Create a free account <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

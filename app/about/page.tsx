@@ -157,7 +157,7 @@ export default function AboutPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
-              href={`${APP_URL}/signup`}
+              href={"/signup"}
               size="lg"
               className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 font-semibold shadow-lg"
             >
