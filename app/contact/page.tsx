@@ -6,10 +6,10 @@ import { ContactForm } from "@/components/contact-form";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with the Event Planning OS team. We're happy to help with questions about pricing, features, or anything else.",
+    "Get in touch with the Elation team. We're happy to help with questions about pricing, features, or anything else.",
   openGraph: {
-    title: "Contact | Event Planning OS",
-    description: "Get in touch with the Event Planning OS team.",
+    title: "Contact | Elation",
+    description: "Get in touch with the Elation team.",
   },
 };
 
@@ -56,10 +56,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-slate-900 text-sm">Email us</p>
                       <a
-                        href="mailto:hello@eventplanningos.com"
+                        href="mailto:hello@elation.events"
                         className="text-indigo-600 hover:underline text-sm"
                       >
-                        hello@eventplanningos.com
+                        hello@elation.events
                       </a>
                     </div>
                   </div>

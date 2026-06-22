@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, CalendarHeart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NAV_LINKS = [
@@ -21,10 +21,10 @@ export function Nav() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-semibold text-indigo-600">
-            <CalendarHeart className="h-7 w-7" />
-            <span className="text-lg font-bold text-slate-900" style={{ fontFamily: "var(--font-display)" }}>
-              Event Planning OS
+          <Link href="/" className="flex items-center gap-1.5 group">
+            <span className="text-amber-500 text-xl leading-none select-none">✦</span>
+            <span className="text-xl font-bold tracking-tight text-[#1E0A3C]" style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}>
+              elation
             </span>
           </Link>
 
@@ -34,7 +34,7 @@ export function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-violet-700 transition-colors"
               >
                 {link.label}
               </Link>
@@ -45,18 +45,18 @@ export function Nav() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href={"/login"}
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-violet-700 transition-colors"
             >
               Sign in
             </Link>
-            <Button asChild href={"/signup"} size="sm" className="bg-indigo-600 hover:bg-indigo-700 text-white">
+            <Button asChild href={"/signup"} size="sm" className="bg-violet-700 hover:bg-violet-800 text-white">
               Start free trial
             </Button>
           </div>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+            className="md:hidden p-2 rounded-md text-slate-600 hover:text-violet-700 hover:bg-violet-50 transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -71,7 +71,7 @@ export function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
+                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-violet-700 hover:bg-violet-50 rounded-md transition-colors"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
@@ -80,12 +80,12 @@ export function Nav() {
             <div className="pt-2 flex flex-col gap-2">
               <Link
                 href={"/login"}
-                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
+                className="block px-2 py-2 text-sm font-medium text-slate-700 hover:text-violet-700 hover:bg-violet-50 rounded-md transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Sign in
               </Link>
-              <Button asChild href={"/signup"} className="bg-indigo-600 hover:bg-indigo-700 text-white w-full">
+              <Button asChild href={"/signup"} className="bg-violet-700 hover:bg-violet-800 text-white w-full">
                 Start free trial
               </Button>
             </div>

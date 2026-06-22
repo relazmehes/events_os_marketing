@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Event Planning OS collects, uses, and protects your personal data.",
+  description: "How Elation collects, uses, and protects your personal data.",
 };
 
 const EFFECTIVE_DATE = "June 21, 2026";
-const CONTACT_EMAIL = "privacy@eventplanningos.com";
-const COMPANY = "Event Planning OS";
+const CONTACT_EMAIL = "privacy@elation.events";
+const COMPANY = "Elation";
 
 export default function PrivacyPage() {
   return (
@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-3">1. Who we are</h2>
             <p>
-              {COMPANY} (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the Event Planning OS
+              {COMPANY} (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the Elation
               platform (the &ldquo;Service&rdquo;). This Privacy Policy explains how we collect, use, disclose,
               and protect information about you when you use our Service.
             </p>

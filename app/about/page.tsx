@@ -8,9 +8,9 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn the story behind Event Planning OS — a platform built by planners, for independent event planners who deserve better tools.",
+    "Learn the story behind Elation — a platform built by planners, for independent event planners who deserve better tools.",
   openGraph: {
-    title: "About | Event Planning OS",
+    title: "About | Elation",
     description: "Built by planners, for independent event planners.",
   },
 };
@@ -92,10 +92,10 @@ export default function AboutPage() {
               className="text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Our answer: Event Planning OS
+              Our answer: Elation
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Event Planning OS is a single, opinionated platform built for independent planners and small
+              Elation is a single, opinionated platform built for independent planners and small
               planning firms. It handles your full event lifecycle — from the first client conversation all the
               way through to the final invoice and post-event follow-up.
             </p>

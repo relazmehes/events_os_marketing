@@ -18,7 +18,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.app";
 
 export const metadata: Metadata = {
-  title: "Event Planning OS — All-in-One Platform for Independent Planners",
+  title: "Elation — All-in-One Event Planning OS for Independent Planners",
   description:
     "Manage your entire event business from one place. Clients, estimates, contracts, invoices, communications, day-of ops, and more — built for independent event planners.",
 };
@@ -132,28 +132,28 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-violet-50 pt-20 pb-24 sm:pt-28 sm:pb-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-violet-50 via-white to-amber-50 pt-20 pb-24 sm:pt-28 sm:pb-32">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99,102,241,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,58,237,0.12) 0%, transparent 70%)",
           }}
         />
         <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-6 bg-indigo-100 text-indigo-700 hover:bg-indigo-100 border-indigo-200">
+          <Badge className="mb-6 bg-violet-100 text-violet-700 hover:bg-violet-100 border-violet-200">
             Built for independent event planners
           </Badge>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#1E0A3C] leading-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Run your entire event
             <br />
-            <span className="text-indigo-600">business in one place</span>
+            <span className="text-violet-700">business in one place</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            From first client inquiry to final invoice — Event Planning OS handles your full event lifecycle
+            From first client inquiry to final invoice — Elation handles your full event lifecycle
             so you can focus on creating unforgettable experiences.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -161,7 +161,7 @@ export default function HomePage() {
               asChild
               href={"/signup"}
               size="lg"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 text-base font-semibold shadow-lg shadow-indigo-200"
+              className="bg-violet-700 hover:bg-violet-800 text-white px-8 text-base font-semibold shadow-lg shadow-violet-200"
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -204,8 +204,8 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.headline} className="flex flex-col items-center gap-3">
-                <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
-                  <item.icon className="h-5 w-5 text-indigo-600" />
+                <div className="w-10 h-10 bg-violet-100 rounded-full flex items-center justify-center">
+                  <item.icon className="h-5 w-5 text-violet-700" />
                 </div>
                 <p className="font-semibold text-slate-900 text-sm">{item.headline}</p>
                 <p className="text-slate-500 text-xs max-w-[200px]">{item.sub}</p>
@@ -229,7 +229,7 @@ export default function HomePage() {
               All the tools. One platform.
             </h2>
             <p className="mt-4 text-slate-600 max-w-xl mx-auto">
-              Stop juggling spreadsheets, email threads, and separate tools. Event Planning OS brings your
+              Stop juggling spreadsheets, email threads, and separate tools. Elation brings your
               entire workflow under one roof.
             </p>
           </div>
@@ -237,11 +237,11 @@ export default function HomePage() {
             {FEATURES.map((feature) => (
               <Card
                 key={feature.title}
-                className="group border-slate-100 hover:border-indigo-200 hover:shadow-md transition-all duration-200"
+                className="group border-slate-100 hover:border-violet-200 hover:shadow-md transition-all duration-200"
               >
                 <CardHeader className="pb-3">
-                  <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-indigo-600 transition-colors">
-                    <feature.icon className="h-5 w-5 text-indigo-600 group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-violet-700 transition-colors">
+                    <feature.icon className="h-5 w-5 text-violet-700 group-hover:text-white transition-colors" />
                   </div>
                   <CardTitle className="text-base font-semibold text-slate-900">{feature.title}</CardTitle>
                 </CardHeader>
@@ -254,7 +254,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               href="/features"
-              className="text-indigo-600 font-medium text-sm hover:text-indigo-700 inline-flex items-center gap-1 transition-colors"
+              className="text-violet-700 font-medium text-sm hover:text-violet-800 inline-flex items-center gap-1 transition-colors"
             >
               View all features <ArrowRight className="h-4 w-4" />
             </Link>
@@ -266,7 +266,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-28 bg-gradient-to-b from-slate-50 to-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <Badge className="mb-4 bg-indigo-100 text-indigo-700 border-indigo-200 hover:bg-indigo-100">
+            <Badge className="mb-4 bg-violet-100 text-violet-700 border-violet-200 hover:bg-violet-100">
               Simple by design
             </Badge>
             <h2
@@ -283,7 +283,7 @@ export default function HomePage() {
             {HOW_IT_WORKS.map((item, idx) => (
               <div key={idx} className="relative text-center">
                 <div
-                  className="mx-auto w-14 h-14 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-indigo-200 mb-5"
+                  className="mx-auto w-14 h-14 rounded-full bg-violet-700 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-violet-200 mb-5"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {item.step}
@@ -324,7 +324,7 @@ export default function HomePage() {
                 key={tier.name}
                 className={`relative rounded-2xl flex flex-col ${
                   tier.highlighted
-                    ? "bg-indigo-600 text-white shadow-2xl shadow-indigo-200 ring-2 ring-indigo-600 scale-105"
+                    ? "bg-violet-700 text-white shadow-2xl shadow-violet-200 ring-2 ring-violet-700 scale-105"
                     : "bg-white border border-slate-200 shadow-sm"
                 }`}
               >
@@ -342,17 +342,17 @@ export default function HomePage() {
                   >
                     {tier.name}
                   </h3>
-                  <p className={`text-sm mb-6 ${tier.highlighted ? "text-indigo-200" : "text-slate-500"}`}>
+                  <p className={`text-sm mb-6 ${tier.highlighted ? "text-violet-200" : "text-slate-500"}`}>
                     {tier.description}
                   </p>
                   <div className="flex items-end gap-1 mb-8">
                     <span
-                      className={`text-4xl font-extrabold ${tier.highlighted ? "text-white" : "text-slate-900"}`}
+                      className={`text-4xl font-extrabold ${tier.highlighted ? "text-white" : "text-[#1E0A3C]"}`}
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tier.price}
                     </span>
-                    <span className={`text-sm mb-1 ${tier.highlighted ? "text-indigo-200" : "text-slate-500"}`}>
+                    <span className={`text-sm mb-1 ${tier.highlighted ? "text-violet-200" : "text-slate-500"}`}>
                       {tier.period}
                     </span>
                   </div>
@@ -361,10 +361,10 @@ export default function HomePage() {
                       <li key={f} className="flex items-start gap-2 text-sm">
                         <CheckCircle2
                           className={`h-4 w-4 mt-0.5 shrink-0 ${
-                            tier.highlighted ? "text-indigo-200" : "text-indigo-500"
+                            tier.highlighted ? "text-violet-200" : "text-violet-600"
                           }`}
                         />
-                        <span className={tier.highlighted ? "text-indigo-100" : "text-slate-700"}>{f}</span>
+                        <span className={tier.highlighted ? "text-violet-100" : "text-slate-700"}>{f}</span>
                       </li>
                     ))}
                   </ul>
@@ -372,8 +372,8 @@ export default function HomePage() {
                     href={tier.ctaHref}
                     className={`inline-flex items-center justify-center w-full rounded-lg py-2.5 px-4 text-sm font-semibold transition-colors ${
                       tier.highlighted
-                        ? "bg-white text-indigo-600 hover:bg-indigo-50"
-                        : "bg-indigo-600 text-white hover:bg-indigo-700"
+                        ? "bg-white text-violet-700 hover:bg-violet-50"
+                        : "bg-violet-700 text-white hover:bg-violet-800"
                     }`}
                   >
                     {tier.cta}
@@ -384,7 +384,7 @@ export default function HomePage() {
           </div>
           <p className="text-center text-sm text-slate-500 mt-8">
             All plans include a 14-day free trial. &nbsp;
-            <Link href="/pricing" className="text-indigo-600 hover:underline font-medium">
+            <Link href="/pricing" className="text-violet-700 hover:underline font-medium">
               View full comparison →
             </Link>
           </p>
@@ -392,7 +392,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA banner */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-violet-600">
+      <section className="py-20 bg-gradient-to-r from-violet-800 to-[#1E0A3C]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
@@ -408,7 +408,7 @@ export default function HomePage() {
               asChild
               href={"/signup"}
               size="lg"
-              className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 text-base font-semibold shadow-lg"
+              className="bg-white text-violet-700 hover:bg-violet-50 px-8 text-base font-semibold shadow-lg"
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

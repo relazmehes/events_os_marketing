@@ -1,6 +1,6 @@
-# Event Planning OS — Marketing Website
+# Elation — Marketing Website
 
-Public marketing website for [Event Planning OS](https://eventplanningos.com) — the all-in-one platform for independent event planners.
+Public marketing website for [Elation](https://elation.events) — the all-in-one platform for independent event planners.
 
 Built with **Next.js 15 (App Router)**, **Tailwind CSS v4**, and **shadcn/ui**. Deployed on **Railway**.
 

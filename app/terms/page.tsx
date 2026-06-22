@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms governing your use of Event Planning OS.",
+  description: "The terms governing your use of Elation.",
 };
 
 const EFFECTIVE_DATE = "June 21, 2026";
-const CONTACT_EMAIL = "legal@eventplanningos.com";
-const COMPANY = "Event Planning OS";
+const CONTACT_EMAIL = "legal@elation.events";
+const COMPANY = "Elation";
 
 export default function TermsPage() {
   return (

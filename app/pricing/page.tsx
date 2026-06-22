@@ -15,9 +15,9 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for Event Planning OS. Basic at $29/mo, Pro at $59/mo, Enterprise at $149/mo. Start free — no credit card required.",
+    "Simple, transparent pricing for Elation. Basic at $29/mo, Pro at $59/mo, Enterprise at $149/mo. Start free — no credit card required.",
   openGraph: {
-    title: "Pricing | Event Planning OS",
+    title: "Pricing | Elation",
     description: "Simple pricing for independent planners and small firms.",
   },
 };
@@ -124,7 +124,7 @@ const FAQS = [
   },
   {
     q: "How does email sync work?",
-    a: "On the Pro and Enterprise plans you can connect your Gmail or Microsoft 365 account via OAuth. Event Planning OS syncs your inbox and automatically links emails to the relevant events and clients.",
+    a: "On the Pro and Enterprise plans you can connect your Gmail or Microsoft 365 account via OAuth. Elation syncs your inbox and automatically links emails to the relevant events and clients.",
   },
   {
     q: "Is there a limit on storage for file attachments?",

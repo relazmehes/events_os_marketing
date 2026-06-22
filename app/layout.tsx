@@ -19,10 +19,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://eventplanningos.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://elation.events"),
   title: {
-    default: "Event Planning OS — All-in-One Platform for Independent Planners",
-    template: "%s | Event Planning OS",
+    default: "Elation — All-in-One Event Planning OS for Independent Planners",
+    template: "%s | Elation",
   },
   description:
     "Manage your entire event business from one place. Clients, estimates, contracts, invoices, communications, day-of ops, and more — built for independent event planners.",
@@ -33,20 +33,21 @@ export const metadata: Metadata = {
     "independent event planner tools",
     "wedding planner software",
     "event business management",
+    "elation events",
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Event Planning OS",
-    title: "Event Planning OS — All-in-One Platform for Independent Planners",
+    siteName: "Elation",
+    title: "Elation — All-in-One Event Planning OS for Independent Planners",
     description:
       "Manage your entire event business from one place. Clients, estimates, contracts, invoices, communications, day-of ops, and more.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Event Planning OS" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Elation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Event Planning OS",
-    description: "All-in-one platform for independent event planners.",
+    title: "Elation",
+    description: "All-in-one event planning OS for independent planners.",
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },

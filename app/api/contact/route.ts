@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.CONTACT_EMAIL ?? "hello@eventplanningos.com";
+    const toEmail = process.env.CONTACT_EMAIL ?? "hello@elation.events";
 
     if (!apiKey) {
       console.warn("RESEND_API_KEY not set — contact form submission logged only.");
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Event Planning OS Contact <noreply@eventplanningos.com>",
+        from: "Elation Contact <noreply@elation.events>",
         to: [toEmail],
         reply_to: email,
         subject: `[Contact] ${subject}`,

@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eventplanningos.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elation.events";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

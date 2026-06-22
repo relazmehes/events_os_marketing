@@ -8,9 +8,9 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Tips, guides, and insights for independent event planners — from the Event Planning OS team.",
+    "Tips, guides, and insights for independent event planners — from the Elation team.",
   openGraph: {
-    title: "Blog | Event Planning OS",
+    title: "Blog | Elation",
     description: "Tips, guides, and insights for independent event planners.",
   },
 };

@@ -35,7 +35,7 @@ export function ContactForm() {
       form.reset();
     } catch {
       setStatus("error");
-      setErrorMsg("Something went wrong. Please try emailing us directly at hello@eventplanningos.com");
+      setErrorMsg("Something went wrong. Please try emailing us directly at hello@elation.events");
     }
   }
 

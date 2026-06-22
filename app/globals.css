@@ -55,15 +55,16 @@
   --card-foreground: oklch(0.2 0.02 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.02 260);
-  /* Indigo 600 */
-  --primary: oklch(0.511 0.262 277.3);
+  /* Violet 700 — Elation primary */
+  --primary: oklch(0.491 0.27 292);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0.01 260);
-  --secondary-foreground: oklch(0.2 0.02 260);
-  --muted: oklch(0.97 0.01 260);
-  --muted-foreground: oklch(0.55 0.02 260);
-  /* Violet 100 */
-  --accent: oklch(0.94 0.03 290);
+  --secondary: oklch(0.97 0.01 290);
+  --secondary-foreground: oklch(0.2 0.02 290);
+  --muted: oklch(0.97 0.01 290);
+  --muted-foreground: oklch(0.55 0.02 290);
+  /* Amber 500 — Elation gold accent */
+  --accent: oklch(0.94 0.08 85);
+  --gold: #F59E0B;
   --accent-foreground: oklch(0.35 0.15 277.3);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.918 0.01 260);
