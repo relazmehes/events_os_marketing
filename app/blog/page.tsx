@@ -59,7 +59,7 @@ export default function BlogPage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Insights for independent planners
           </h1>
@@ -77,7 +77,7 @@ export default function BlogPage() {
             <Rss className="h-5 w-5 text-indigo-500" />
             <h2
               className="text-lg font-semibold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Coming up
             </h2>
@@ -102,7 +102,7 @@ export default function BlogPage() {
             <BookOpen className="h-8 w-8 text-indigo-500 mx-auto mb-4" />
             <h3
               className="text-xl font-bold text-slate-900 mb-2"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Be first to read new articles
             </h3>

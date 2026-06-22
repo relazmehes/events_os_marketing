@@ -10,7 +10,7 @@ export function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <CalendarHeart className="h-6 w-6 text-indigo-400" />
-              <span className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-sora)" }}>
+              <span className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-display)" }}>
                 Event Planning OS
               </span>
             </Link>

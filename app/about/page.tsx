@@ -53,7 +53,7 @@ export default function AboutPage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Empowering the planners
             <br />
@@ -73,7 +73,7 @@ export default function AboutPage() {
           <div className="prose prose-slate prose-lg max-w-none">
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               The problem with existing tools
             </h2>
@@ -90,7 +90,7 @@ export default function AboutPage() {
 
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-6"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Our answer: Event Planning OS
             </h2>
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="text-center mb-14">
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               What we stand for
             </h2>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 </div>
                 <h3
                   className="font-semibold text-slate-900 text-lg mb-2"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {v.title}
                 </h3>
@@ -147,7 +147,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Ready to simplify your workflow?
           </h2>

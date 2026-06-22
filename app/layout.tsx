@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 
-
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
-const sora = Sora({
-  variable: "--font-sora",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -60,9 +59,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sora.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-white text-slate-900">
+      className={`${dmSans.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      >
+      <body className="min-h-full flex flex-col bg-white text-slate-900 font-[var(--font-body)]">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -23,7 +23,7 @@ export function Nav() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-semibold text-indigo-600">
             <CalendarHeart className="h-7 w-7" />
-            <span className="text-lg font-bold text-slate-900" style={{ fontFamily: "var(--font-sora)" }}>
+            <span className="text-lg font-bold text-slate-900" style={{ fontFamily: "var(--font-display)" }}>
               Event Planning OS
             </span>
           </Link>

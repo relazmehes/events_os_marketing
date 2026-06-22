@@ -45,7 +45,7 @@ export function ContactForm() {
         <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
           <CheckCircle2 className="h-7 w-7 text-green-600" />
         </div>
-        <h3 className="font-semibold text-slate-900 text-lg mb-2" style={{ fontFamily: "var(--font-sora)" }}>
+        <h3 className="font-semibold text-slate-900 text-lg mb-2" style={{ fontFamily: "var(--font-display)" }}>
           Message sent!
         </h3>
         <p className="text-slate-600 text-sm max-w-xs">

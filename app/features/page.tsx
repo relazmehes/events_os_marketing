@@ -176,7 +176,7 @@ export default function FeaturesPage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Everything your planning
             <br className="hidden sm:block" /> business needs
@@ -232,7 +232,7 @@ export default function FeaturesPage() {
                 </Badge>
                 <h2
                   className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {mod.name}
                 </h2>
@@ -261,7 +261,7 @@ export default function FeaturesPage() {
           <Zap className="h-10 w-10 text-indigo-200 mx-auto mb-4" />
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Ready to see it in action?
           </h2>

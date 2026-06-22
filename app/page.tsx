@@ -7,7 +7,9 @@ import {
   ClipboardList,
   ArrowRight,
   CheckCircle2,
-  Star,
+  ShieldCheck,
+  Clock,
+  Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -144,7 +146,7 @@ export default function HomePage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Run your entire event
             <br />
@@ -177,29 +179,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social proof strip */}
+      {/* Value strip */}
       <section className="border-y border-slate-100 bg-slate-50 py-10">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <p className="text-center text-sm font-medium text-slate-500 uppercase tracking-widest mb-8">
-            Trusted by independent planners
+            Built for independent event planners
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             {[
-              { quote: "Finally, a tool that fits how I actually work.", name: "Sarah M.", role: "Wedding Planner" },
-              { quote: "Cut my admin time in half. My clients notice the difference.", name: "James K.", role: "Corporate Events" },
-              { quote: "Contracts, invoices, day-of packs — everything in one tab.", name: "Priya L.", role: "Social Events Planner" },
-            ].map((t) => (
-              <div key={t.name} className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
-                <div className="flex gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
-                  ))}
+              {
+                icon: Clock,
+                headline: "14-day free trial",
+                sub: "No credit card required to get started.",
+              },
+              {
+                icon: Zap,
+                headline: "Everything in one place",
+                sub: "Clients, docs, email, ops — zero context switching.",
+              },
+              {
+                icon: ShieldCheck,
+                headline: "Cancel anytime",
+                sub: "No lock-in. Export your data whenever you want.",
+              },
+            ].map((item) => (
+              <div key={item.headline} className="flex flex-col items-center gap-3">
+                <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                  <item.icon className="h-5 w-5 text-indigo-600" />
                 </div>
-                <p className="text-slate-700 text-sm leading-relaxed italic">"{t.quote}"</p>
-                <div className="mt-4">
-                  <p className="font-semibold text-slate-900 text-sm">{t.name}</p>
-                  <p className="text-slate-500 text-xs">{t.role}</p>
-                </div>
+                <p className="font-semibold text-slate-900 text-sm">{item.headline}</p>
+                <p className="text-slate-500 text-xs max-w-[200px]">{item.sub}</p>
               </div>
             ))}
           </div>
@@ -215,7 +224,7 @@ export default function HomePage() {
             </Badge>
             <h2
               className="text-3xl sm:text-4xl font-bold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               All the tools. One platform.
             </h2>
@@ -262,7 +271,7 @@ export default function HomePage() {
             </Badge>
             <h2
               className="text-3xl sm:text-4xl font-bold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               How it works
             </h2>
@@ -275,13 +284,13 @@ export default function HomePage() {
               <div key={idx} className="relative text-center">
                 <div
                   className="mx-auto w-14 h-14 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-indigo-200 mb-5"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {item.step}
                 </div>
                 <h3
                   className="font-semibold text-lg text-slate-900 mb-2"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {item.title}
                 </h3>
@@ -301,7 +310,7 @@ export default function HomePage() {
             </Badge>
             <h2
               className="text-3xl sm:text-4xl font-bold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Simple, predictable pricing
             </h2>
@@ -329,7 +338,7 @@ export default function HomePage() {
                 <div className="p-8 flex-1 flex flex-col">
                   <h3
                     className={`text-xl font-bold mb-1 ${tier.highlighted ? "text-white" : "text-slate-900"}`}
-                    style={{ fontFamily: "var(--font-sora)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     {tier.name}
                   </h3>
@@ -339,7 +348,7 @@ export default function HomePage() {
                   <div className="flex items-end gap-1 mb-8">
                     <span
                       className={`text-4xl font-extrabold ${tier.highlighted ? "text-white" : "text-slate-900"}`}
-                      style={{ fontFamily: "var(--font-sora)" }}
+                      style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tier.price}
                     </span>
@@ -387,7 +396,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Ready to simplify your event business?
           </h2>
@@ -408,7 +417,7 @@ export default function HomePage() {
               href="/pricing"
               variant="outline"
               size="lg"
-              className="border-white/40 text-white hover:bg-white/10 px-8 text-base"
+              className="border-white text-white bg-white/10 hover:bg-white/20 px-8 text-base font-semibold"
             >
               View pricing
             </Button>

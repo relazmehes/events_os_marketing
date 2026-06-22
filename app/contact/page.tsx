@@ -24,7 +24,7 @@ export default function ContactPage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             We'd love to hear from you
           </h1>
@@ -44,7 +44,7 @@ export default function ContactPage() {
               <div>
                 <h2
                   className="text-xl font-bold text-slate-900 mb-6"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   Contact information
                 </h2>
@@ -100,7 +100,7 @@ export default function ContactPage() {
               <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
                 <h2
                   className="text-xl font-bold text-slate-900 mb-6"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   Send a message
                 </h2>

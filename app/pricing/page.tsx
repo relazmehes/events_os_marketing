@@ -159,7 +159,7 @@ export default function PricingPage() {
           </Badge>
           <h1
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Simple pricing,
             <br /> no surprises
@@ -194,7 +194,7 @@ export default function PricingPage() {
                 <div className="p-8 flex-1 flex flex-col">
                   <h2
                     className={`text-xl font-bold mb-1 ${tier.highlighted ? "text-white" : "text-slate-900"}`}
-                    style={{ fontFamily: "var(--font-sora)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     {tier.name}
                   </h2>
@@ -204,7 +204,7 @@ export default function PricingPage() {
                   <div className="flex items-end gap-1 mb-8">
                     <span
                       className={`text-4xl font-extrabold ${tier.highlighted ? "text-white" : "text-slate-900"}`}
-                      style={{ fontFamily: "var(--font-sora)" }}
+                      style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tier.price}
                     </span>
@@ -250,7 +250,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <h2
             className="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-12"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Feature comparison
           </h2>
@@ -298,7 +298,7 @@ export default function PricingPage() {
             <HelpCircle className="h-8 w-8 text-indigo-500 mx-auto mb-3" />
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-900"
-              style={{ fontFamily: "var(--font-sora)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Frequently asked questions
             </h2>
@@ -333,7 +333,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
-            style={{ fontFamily: "var(--font-sora)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Start your free trial today
           </h2>
