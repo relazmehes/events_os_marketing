@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Heart, Users, Zap, Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -163,15 +164,12 @@ export default function AboutPage() {
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button
-              asChild
+            <Link
               href="/contact"
-              variant="outline"
-              size="lg"
-              className="border-white/40 text-white hover:bg-white/10 px-8"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white border-2 border-white bg-transparent hover:bg-white hover:text-indigo-700 transition-colors"
             >
               Get in touch
-            </Button>
+            </Link>
           </div>
         </div>
       </section>

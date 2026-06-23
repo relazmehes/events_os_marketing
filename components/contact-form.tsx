@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Button } from "@/components/ui/button";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -126,10 +125,10 @@ export function ContactForm() {
         </p>
       )}
 
-      <Button
+      <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
       >
         {status === "loading" ? (
           <>
@@ -140,7 +139,7 @@ export function ContactForm() {
             <Send className="mr-2 h-4 w-4" /> Send message
           </>
         )}
-      </Button>
+      </button>
 
       <p className="text-xs text-slate-400 text-center">
         We'll never share your information with third parties.
