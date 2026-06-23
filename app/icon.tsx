@@ -11,7 +11,7 @@ export default function Icon() {
           width: 32,
           height: 32,
           borderRadius: 8,
-          background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
+          background: "#1E0A3C",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -19,15 +19,12 @@ export default function Icon() {
       >
         <span
           style={{
-            color: "white",
-            fontSize: 20,
-            fontWeight: 800,
-            fontFamily: "serif",
-            letterSpacing: "-1px",
+            color: "#F59E0B",
+            fontSize: 22,
             lineHeight: 1,
           }}
         >
-          E
+          ✦
         </span>
       </div>
     ),
