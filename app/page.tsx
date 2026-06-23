@@ -412,15 +412,12 @@ export default function HomePage() {
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button
-              asChild
+            <Link
               href="/pricing"
-              variant="outline"
-              size="lg"
-              className="border-white text-white bg-white/10 hover:bg-white/20 px-8 text-base font-semibold"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white border-2 border-white bg-transparent hover:bg-white hover:text-violet-800 transition-colors"
             >
               View pricing
-            </Button>
+            </Link>
           </div>
           <p className="mt-4 text-sm text-indigo-200">No credit card required · Cancel anytime</p>
         </div>
