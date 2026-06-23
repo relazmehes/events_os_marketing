@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   CalendarDays,
   Users,
@@ -268,14 +269,12 @@ export default function FeaturesPage() {
           <p className="mt-4 text-indigo-100 max-w-xl mx-auto">
             Start your free 14-day trial — no credit card required.
           </p>
-          <Button
-            asChild
-            href={"/signup"}
-            size="lg"
-            className="mt-8 bg-white text-indigo-600 hover:bg-indigo-50 px-8 text-base font-semibold shadow-lg"
+          <Link
+            href="/signup"
+            className="mt-8 inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-indigo-600 bg-white hover:bg-indigo-50 shadow-lg transition-colors"
           >
             Start free trial <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          </Link>
         </div>
       </section>
     </>

@@ -157,23 +157,18 @@ export default function HomePage() {
             so you can focus on creating unforgettable experiences.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              href={"/signup"}
-              size="lg"
-              className="bg-violet-700 hover:bg-violet-800 text-white px-8 text-base font-semibold shadow-lg shadow-violet-200"
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white bg-violet-700 hover:bg-violet-800 shadow-lg shadow-violet-200 transition-colors"
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button
-              asChild
+            </Link>
+            <Link
               href="/features"
-              variant="outline"
-              size="lg"
-              className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 text-base"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-slate-700 border-2 border-slate-300 bg-transparent hover:bg-slate-50 transition-colors"
             >
               See all features
-            </Button>
+            </Link>
           </div>
           <p className="mt-4 text-sm text-slate-500">No credit card required · Cancel anytime</p>
         </div>
@@ -404,14 +399,12 @@ export default function HomePage() {
             Join independent planners who manage their entire business without the chaos.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              href={"/signup"}
-              size="lg"
-              className="bg-white text-violet-700 hover:bg-violet-50 px-8 text-base font-semibold shadow-lg"
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-violet-700 bg-white hover:bg-violet-50 shadow-lg transition-colors"
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Link>
             <Link
               href="/pricing"
               className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white border-2 border-white bg-transparent hover:bg-white hover:text-violet-800 transition-colors"

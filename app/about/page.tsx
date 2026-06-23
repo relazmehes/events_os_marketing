@@ -156,14 +156,12 @@ export default function AboutPage() {
             Start your free trial today — no credit card required.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              href={"/signup"}
-              size="lg"
-              className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 font-semibold shadow-lg"
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-indigo-700 bg-white hover:bg-indigo-50 shadow-lg transition-colors"
             >
               Start free trial <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Link>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-white border-2 border-white bg-transparent hover:bg-white hover:text-indigo-700 transition-colors"
