@@ -10,6 +10,8 @@ import {
   Bell,
   LayoutDashboard,
   PenLine,
+  Armchair,
+  PartyPopper,
   ArrowRight,
   CheckCircle2,
   Zap,
@@ -22,7 +24,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Explore every module in Elation — Events, Clients, Estimates, Contracts, Invoices, Email, Day-of Ops, Guest List, and more.",
+    "Explore every module in Elation — Events, Clients, Estimates, Contracts, Invoices, Email, Floor Plans & Seating, Guest Portal & Invitations, Day-of Ops, and more.",
   openGraph: {
     title: "Features | Elation",
     description: "Every tool you need to run a successful event planning business.",
@@ -135,6 +137,22 @@ const MODULES = [
     color: "indigo",
   },
   {
+    icon: Armchair,
+    name: "Floor Plans & Seating",
+    tagline: "Design the room, seat every guest",
+    description:
+      "Lay out the entire venue and build seating charts in interactive 2D and 3D. Start from a library of ready-made venue layouts, arrange tables and décor, then assign guests to seats — and share a polished plan with your venue and caterer.",
+    highlights: [
+      "Interactive 2D & 3D views",
+      "Ready-made venue layout library",
+      "Smart layout starting point",
+      "Drag-and-drop tables, stages & décor",
+      "Seat guests & print place settings",
+      "Export to PDF for vendors",
+    ],
+    color: "violet",
+  },
+  {
     icon: Users2,
     name: "Guest List",
     tagline: "Every guest, perfectly organised",
@@ -146,6 +164,22 @@ const MODULES = [
       "Dietary requirement flags",
       "Table/seating notes",
       "Export for caterers & venues",
+    ],
+    color: "indigo",
+  },
+  {
+    icon: PartyPopper,
+    name: "Guest Portal & Invitations",
+    tagline: "Invitations guests love to open",
+    description:
+      "Send beautifully branded invitations by email or text, and give every guest a personal online portal to RSVP, choose their meal, note dietary needs, and add named plus-ones. On the day, guests can find their table in seconds.",
+    highlights: [
+      "Branded email & SMS invitations",
+      "Online RSVP & meal selection",
+      "Dietary needs & named plus-ones",
+      "Event schedule, travel & registry details",
+      "Find-your-table & QR check-in",
+      "Your brand, colours & logo throughout",
     ],
     color: "violet",
   },
@@ -183,7 +217,7 @@ export default function FeaturesPage() {
             <br className="hidden sm:block" /> business needs
           </h1>
           <p className="mt-5 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Nine purpose-built modules, one seamless platform. From first hello to final invoice — and
+            Eleven purpose-built modules, one seamless platform. From first hello to final invoice — and
             everything in between.
           </p>
         </div>

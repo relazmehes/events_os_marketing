@@ -51,10 +51,11 @@ const TIERS = [
       "1 user",
       "Unlimited events",
       "Everything in Basic",
+      "Floor plans & seating charts (2D & 3D)",
+      "Guest portal & invitations (email & SMS)",
       "Gmail & Microsoft 365 email sync",
       "Automated reminder emails",
       "AI estimate suggestions",
-      "Advanced reporting & analytics",
       "Priority email support",
     ],
     cta: "Start free trial",
@@ -98,6 +99,8 @@ const COMPARISON: ComparisonRow[] = [
   { feature: "Day-of ops pack", basic: true, pro: true, enterprise: true },
   { feature: "Guest list management", basic: true, pro: true, enterprise: true },
   { feature: "File attachments & PDF export", basic: true, pro: true, enterprise: true },
+  { feature: "Floor plans & seating (2D & 3D)", basic: false, pro: true, enterprise: true },
+  { feature: "Guest portal & invitations (email & SMS)", basic: false, pro: true, enterprise: true },
   { feature: "Gmail / M365 email sync", basic: false, pro: true, enterprise: true },
   { feature: "Automated reminder emails", basic: false, pro: true, enterprise: true },
   { feature: "AI estimate suggestions", basic: false, pro: true, enterprise: true },
@@ -125,6 +128,10 @@ const FAQS = [
   {
     q: "How does email sync work?",
     a: "On the Pro and Enterprise plans you can connect your Gmail or Microsoft 365 account via OAuth. Elation syncs your inbox and automatically links emails to the relevant events and clients.",
+  },
+  {
+    q: "Which plans include floor plans and the guest portal?",
+    a: "Floor plans & seating charts and the branded guest portal with email/SMS invitations are included on the Pro and Enterprise plans. Basic covers the core planning workflow — clients, events, estimates, invoices, contracts, guest lists, and the day-of ops pack.",
   },
   {
     q: "Is there a limit on storage for file attachments?",

@@ -5,6 +5,8 @@ import {
   FileText,
   Mail,
   ClipboardList,
+  Armchair,
+  PartyPopper,
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
@@ -20,7 +22,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://your-app.up.railway.
 export const metadata: Metadata = {
   title: "Elation — All-in-One Event Planning OS for Independent Planners",
   description:
-    "Manage your entire event business from one place. Clients, estimates, contracts, invoices, communications, day-of ops, and more — built for independent event planners.",
+    "Run your entire event business from one place — clients, estimates, contracts, invoices, communications, floor plans & seating, guest invitations & RSVPs, and day-of ops. Built for independent event planners.",
 };
 
 const FEATURES = [
@@ -35,6 +37,18 @@ const FEATURES = [
     title: "Estimates, Contracts & Invoices",
     description:
       "Create polished proposals, send legally-sound contracts for e-signature, and collect payments — all in one flow.",
+  },
+  {
+    icon: Armchair,
+    title: "Floor Plans & Seating",
+    description:
+      "Design floor plans and seating charts in interactive 2D and 3D — start from ready-made venue layouts, then seat every guest with ease.",
+  },
+  {
+    icon: PartyPopper,
+    title: "Guest Invitations & RSVPs",
+    description:
+      "Send beautiful invitations by email or text and give guests a branded portal to RSVP, pick their meal, and find their table.",
   },
   {
     icon: Mail,
@@ -99,9 +113,10 @@ const PRICING_TIERS = [
       "1 user",
       "Unlimited events",
       "Everything in Basic",
+      "Floor plans & seating (2D & 3D)",
+      "Guest portal & invitations",
       "Gmail & M365 email sync",
       "Automated reminders",
-      "Advanced reporting",
       "Priority email support",
     ],
     cta: "Start free trial",
@@ -228,7 +243,7 @@ export default function HomePage() {
               entire workflow under one roof.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {FEATURES.map((feature) => (
               <Card
                 key={feature.title}
