@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "How Elation collects, uses, and protects your personal data.",
 };
 
-const EFFECTIVE_DATE = "June 21, 2026";
+const EFFECTIVE_DATE = "November 18, 2026";
 const CONTACT_EMAIL = "privacy@elation.events";
 const COMPANY = "Elation";
 
@@ -48,13 +48,16 @@ export default function PrivacyPage() {
             <h3 className="font-semibold text-slate-800 mt-4 mb-1">Business data you enter</h3>
             <p>
               We store the data you add to the Service: clients, events, estimates, invoices, contracts,
-              communications, files, and related records. This data belongs to you.
+              communications, files, and related records. This includes information about your clients,
+              vendors, and guests, such as what guests submit through invitation and RSVP links. This data
+              belongs to you.
             </p>
             <h3 className="font-semibold text-slate-800 mt-4 mb-1">Email connections</h3>
             <p>
-              If you connect a Gmail or Microsoft 365 account, we store OAuth tokens required to
-              sync messages on your behalf. We access only the permissions you explicitly grant.
-              We do not sell or share your email content.
+              If you connect a Gmail or Microsoft 365 account, we store the OAuth tokens needed to send
+              and sync messages on your behalf, and we encrypt them before saving them. We access only the
+              permissions you explicitly grant. We do not sell your email content, and we share it only as
+              described in sections 4 and 5.
             </p>
             <h3 className="font-semibold text-slate-800 mt-4 mb-1">Usage and technical data</h3>
             <p>
@@ -73,7 +76,8 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-5 space-y-1">
               <li>To provide and maintain the Service</li>
               <li>To process billing and subscriptions</li>
-              <li>To send transactional emails (account confirmation, password reset, reminders you configure)</li>
+              <li>To send emails: account emails (such as confirmation and password reset), reminders you configure, and messages you send to your clients</li>
+              <li>To provide AI features you choose to use (see section 5)</li>
               <li>To respond to support requests</li>
               <li>To detect, investigate, and prevent security incidents</li>
               <li>To improve the Service based on aggregated, anonymised usage patterns</li>
@@ -85,17 +89,58 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-3">4. Data sharing</h2>
-            <p>We share your data only with:</p>
+            <p>
+              We share your data only with the parties below, and only so they can provide their part of
+              the Service:
+            </p>
             <ul className="list-disc pl-5 space-y-1 mt-2">
               <li><strong>Stripe</strong> — for payment processing</li>
               <li><strong>Railway</strong> — our hosting and database provider</li>
-              <li><strong>Google / Microsoft</strong> — only when you choose to connect an OAuth account</li>
+              <li><strong>Resend</strong> — for delivering emails the Service sends: account emails, reminders, and client emails sent without a connected mailbox</li>
+              <li><strong>Anthropic</strong> — for AI features, when they are switched on for your business (see section 5)</li>
+              <li><strong>Twilio</strong> — for delivering text messages, when you use text message features</li>
+              <li><strong>Google / Microsoft</strong> — only when you choose to sign in with or connect a Google or Microsoft account</li>
               <li><strong>Law enforcement</strong> — when required by applicable law or a valid legal request</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">5. Data retention</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">5. AI features</h2>
+            <p>
+              Elation includes an AI assistant that helps you with tasks such as drafting emails, estimates,
+              and contracts. AI features are off unless they are switched on for your business.
+            </p>
+            <ul className="list-disc pl-5 space-y-1 mt-3">
+              <li>
+                When you use the assistant, the information it needs for the task is sent to Anthropic, the
+                company that provides the AI model, so it can produce a result. This can include your
+                request, related records such as event, client, vendor, and guest details or an email thread,
+                and any photo you add.
+              </li>
+              <li>
+                Under Anthropic&rsquo;s commercial terms, this information is not used to train AI models.
+                Anthropic keeps it only for a limited time, as set out in its terms, unless the law requires
+                longer.
+              </li>
+              <li>
+                The assistant prepares drafts and suggested changes. You review them before anything is saved
+                or sent to a client.
+              </li>
+              <li>
+                If you speak to the assistant, your browser or phone turns your speech into text using its
+                own speech recognition, under its maker&rsquo;s terms. Elation receives the text.
+              </li>
+              <li>
+                To have AI features switched off for your business, contact us at{" "}
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-indigo-600 hover:underline">
+                  {CONTACT_EMAIL}
+                </a>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">6. Data retention</h2>
             <p>
               We retain your account and business data for as long as your account is active. If you close
               your account, we will delete or anonymise your personal data within 90 days, except where
@@ -104,7 +149,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">6. Your rights</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">7. Your rights</h2>
             <p>Depending on your location, you may have the right to:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2">
               <li>Access the personal data we hold about you</li>
@@ -122,7 +167,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">7. Cookies</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">8. Cookies</h2>
             <p>
               We use a session cookie for authentication (NextAuth.js) and may use analytics cookies
               to understand page usage. We do not use advertising or cross-site tracking cookies.
@@ -130,7 +175,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">8. Security</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">9. Security</h2>
             <p>
               Passwords are hashed with bcrypt. Data is transmitted over TLS. We follow industry-standard
               practices to protect your information, but no method of transmission or storage is 100% secure.
@@ -138,7 +183,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">9. Children</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">10. Children</h2>
             <p>
               The Service is not directed to children under 16. We do not knowingly collect personal data
               from children under 16.
@@ -146,7 +191,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">10. Changes to this policy</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">11. Changes to this policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of material changes
               by email or by a notice in the app. Continued use of the Service after the effective date
@@ -155,7 +200,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">11. Contact</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">12. Contact</h2>
             <p>
               For privacy-related questions, contact us at{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-indigo-600 hover:underline">
