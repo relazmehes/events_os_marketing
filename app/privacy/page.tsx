@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "How Elation collects, uses, and protects your personal data.",
 };
 
-const EFFECTIVE_DATE = "November 18, 2026";
+const EFFECTIVE_DATE = "November 26, 2026";
 const CONTACT_EMAIL = "privacy@elation.events";
 const COMPANY = "Elation";
 
@@ -55,9 +55,21 @@ export default function PrivacyPage() {
             <h3 className="font-semibold text-slate-800 mt-4 mb-1">Email connections</h3>
             <p>
               If you connect a Gmail or Microsoft 365 account, we store the OAuth tokens needed to send
-              and sync messages on your behalf, and we encrypt them before saving them. We access only the
-              permissions you explicitly grant. We do not sell your email content, and we share it only as
-              described in sections 4 and 5.
+              messages you write in Elation (Gmail), or to send and sync messages (Microsoft 365), on your
+              behalf, and we encrypt them before saving them. We access only the permissions you explicitly
+              grant. We do not sell your email content, and we share it only as described in sections 4 and 5.
+            </p>
+            <p className="mt-3">
+              Elation&rsquo;s use and transfer to any other app of information received from Google APIs
+              will adhere to the{" "}
+              <a
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+                className="text-indigo-600 hover:underline"
+              >
+                Google API Services User Data Policy
+              </a>
+              , including the Limited Use requirements. We do not use information received from Google APIs
+              to develop, improve, or train AI models.
             </p>
             <h3 className="font-semibold text-slate-800 mt-4 mb-1">Usage and technical data</h3>
             <p>
